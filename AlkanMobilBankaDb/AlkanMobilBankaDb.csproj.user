@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BakiyeGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HesapHareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MusteriAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MusteriGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MusteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MusteriSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="musteriİslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ParaCek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ParaGonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ParaYatir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ParolaDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PasifHesapAc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Yetkiliİslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
