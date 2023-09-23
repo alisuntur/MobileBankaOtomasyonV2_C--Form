@@ -18,13 +18,18 @@ namespace AlkanMobilBankaDb
             InitializeComponent();
         }
 
-        SqlConnection connect = new SqlConnection("server=DESKTOP-M2A9413\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True");
+        SqlConnection connect = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True");
 
 
         private void BakiyeGoruntule_Load(object sender, EventArgs e)
         {
             //Bakiye verimizi Ana ekran Class ından çektik 
             lblBakiye.Text = AnaEkran.mBakiye.ToString() + "TL";
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

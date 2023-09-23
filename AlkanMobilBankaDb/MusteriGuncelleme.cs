@@ -18,7 +18,7 @@ namespace AlkanMobilBankaDb
             InitializeComponent();
         }
 
-        SqlConnection connect = new SqlConnection("server=DESKTOP-M2A9413\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True");
+        SqlConnection connect = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True");
         private void button1_Click(object sender, EventArgs e)
         {
             SqlCommand command = new SqlCommand("select * from  musteriler where ID= @p1 or tckimlikNo= @p2  ", connect);
@@ -66,14 +66,14 @@ namespace AlkanMobilBankaDb
 
 
             connect.Open();
-            int guncelsonuc=command.ExecuteNonQuery();
-            if (guncelsonuc==1)
+            int guncelsonuc = command.ExecuteNonQuery();
+            if (guncelsonuc == 1)
             {
-                MessageBox.Show(txtVerilenBilgi.Text+" Numaralı Kişinin" + " Güncellemesi Yapıldı ", "Güncelleme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(txtVerilenBilgi.Text + " Numaralı Kişinin" + " Güncellemesi Yapıldı ", "Güncelleme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                MessageBox.Show(txtVerilenBilgi.Text+" Numaralı Kişinin" + " Güncellemesi Yapılmadı !", "Güncelleme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(txtVerilenBilgi.Text + " Numaralı Kişinin" + " Güncellemesi Yapılmadı !", "Güncelleme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtVerilenBilgi.Text = "";
                 txtTcKimlikNo.Text = "";
                 txtAdres.Text = "";
@@ -85,6 +85,16 @@ namespace AlkanMobilBankaDb
 
             }
             connect.Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

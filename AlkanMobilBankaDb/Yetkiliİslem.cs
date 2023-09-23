@@ -42,12 +42,6 @@ namespace AlkanMobilBankaDb
             musteriguncelle.Show();
         }
 
-        private void btnSil_Click(object sender, EventArgs e)
-        {
-            MusteriSil musterisilme = new MusteriSil();
-            musterisilme.Show();
-        }
-
         private void btnListele_Click(object sender, EventArgs e)
         {
             MusteriListele musterilisteleme = new MusteriListele();
@@ -59,5 +53,23 @@ namespace AlkanMobilBankaDb
             PasifHesapAc hesapaktiflestir = new PasifHesapAc();
             hesapaktiflestir.Show();
         }
+
+        private void btnPasiflestir_Click(object sender, EventArgs e)
+        {
+            MusteriPasiflestir hesappasiflestir = new MusteriPasiflestir();
+            hesappasiflestir.Show();
+        }
+
+        private void Yetkiliİslem_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

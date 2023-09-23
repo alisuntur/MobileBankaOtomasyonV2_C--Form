@@ -28,52 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BakiyeGoruntule));
             label2 = new Label();
-            label1 = new Label();
             lblBakiye = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe Print", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(40, 180);
-            label2.Margin = new Padding(6, 0, 6, 0);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Times New Roman", 13.2000008F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(440, 275);
+            label2.Margin = new Padding(7, 0, 7, 0);
             label2.Name = "label2";
-            label2.Size = new Size(423, 33);
+            label2.Size = new Size(225, 52);
             label2.TabIndex = 9;
-            label2.Text = "Hesabınızda Bulunan Bakiye  Tutarı (TL) :";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe Print", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(163, 81);
-            label1.Margin = new Padding(6, 0, 6, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(478, 37);
-            label1.TabIndex = 8;
-            label1.Text = "Bakiye Görüntüleme Ekranına Hoşgeldiniz ..";
+            label2.Text = "Hesabınızda Bulunan \r\nBakiye  Tutarı (TL) :";
+            label2.Click += label2_Click;
             // 
             // lblBakiye
             // 
             lblBakiye.AutoSize = true;
             lblBakiye.Font = new Font("Segoe Print", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblBakiye.Location = new Point(499, 180);
-            lblBakiye.Margin = new Padding(6, 0, 6, 0);
+            lblBakiye.Location = new Point(477, 374);
+            lblBakiye.Margin = new Padding(7, 0, 7, 0);
             lblBakiye.Name = "lblBakiye";
-            lblBakiye.Size = new Size(20, 33);
+            lblBakiye.Size = new Size(25, 43);
             lblBakiye.TabIndex = 10;
             lblBakiye.Text = ".";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe Print", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.Location = new Point(453, 56);
+            label6.Name = "label6";
+            label6.Size = new Size(617, 100);
+            label6.TabIndex = 24;
+            label6.Text = "Bakiye Görüntüleme Ekranına Hoşgeldiniz\r\n\r\n";
+            // 
             // BakiyeGoruntule
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1082, 703);
+            Controls.Add(label6);
             Controls.Add(lblBakiye);
             Controls.Add(label2);
-            Controls.Add(label1);
+            DoubleBuffered = true;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "BakiyeGoruntule";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "BakiyeGoruntule";
@@ -85,7 +93,7 @@
         #endregion
 
         private Label label2;
-        private Label label1;
         private Label lblBakiye;
+        private Label label6;
     }
 }

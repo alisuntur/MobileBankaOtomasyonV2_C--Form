@@ -22,7 +22,7 @@
     <Compile Update="MusteriListele.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MusteriSil.cs">
+    <Compile Update="MusteriPasiflestir.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="musteriİslem.cs">

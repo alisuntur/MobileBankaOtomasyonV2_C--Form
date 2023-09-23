@@ -28,39 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HesapHareket));
             dataGridView1 = new DataGridView();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe Print", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(189, 39);
-            label1.Margin = new Padding(6, 0, 6, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(461, 37);
-            label1.TabIndex = 15;
-            label1.Text = "Hesap Hareketleri  Ekranına Hoşgeldiniz ..";
             // 
             // dataGridView1
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = Color.Firebrick;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(115, 131);
+            dataGridView1.Location = new Point(200, 159);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(613, 358);
+            dataGridView1.Size = new Size(701, 477);
             dataGridView1.TabIndex = 16;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe Print", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label6.Location = new Point(413, 37);
+            label6.Name = "label6";
+            label6.Size = new Size(582, 100);
+            label6.TabIndex = 23;
+            label6.Text = "Hesap Hareketleri Ekranına Hoşgeldiniz\r\n\r\n";
             // 
             // HesapHareket
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(880, 624);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1082, 703);
+            Controls.Add(label6);
             Controls.Add(dataGridView1);
-            Controls.Add(label1);
+            DoubleBuffered = true;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "HesapHareket";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HesapHareket";
@@ -71,8 +79,7 @@
         }
 
         #endregion
-
-        private Label label1;
         private DataGridView dataGridView1;
+        private Label label6;
     }
 }
