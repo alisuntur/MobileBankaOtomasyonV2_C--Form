@@ -18,7 +18,7 @@ namespace AlkanMobilBankaDb
             InitializeComponent();
         }
 
-        SqlConnection connect = new SqlConnection("server=DESKTOP-M2A9413\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True");
+        SqlConnection connect = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True");
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace AlkanMobilBankaDb
                     MessageBox.Show(message, "Para Yatırma İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     AnaEkran.mBakiye += sayi;
 
-                    HareketKaydet.Kaydet(AnaEkran.musteriId, (sayi +"TL Para Yatırıldı"));
+                    HareketKaydet.Kaydet(AnaEkran.musteriId, (sayi + "TL Para Yatırıldı"));
                 }
                 catch (Exception ex)
                 {

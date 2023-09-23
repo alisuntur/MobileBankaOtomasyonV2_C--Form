@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParaYatir));
             button1 = new Button();
             txtTutarYatan = new MaskedTextBox();
             label2 = new Label();
@@ -36,10 +37,12 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe Print", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            button1.Location = new Point(486, 194);
+            button1.Font = new Font("Segoe UI Historic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(339, 423);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(105, 34);
+            button1.Size = new Size(154, 46);
             button1.TabIndex = 7;
             button1.Text = "Para Yatır";
             button1.UseVisualStyleBackColor = true;
@@ -48,44 +51,50 @@
             // txtTutarYatan
             // 
             txtTutarYatan.Font = new Font("Segoe Print", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            txtTutarYatan.Location = new Point(515, 142);
-            txtTutarYatan.Mask = "0000000000";
+            txtTutarYatan.Location = new Point(328, 337);
+            txtTutarYatan.Margin = new Padding(3, 4, 3, 4);
+            txtTutarYatan.Mask = "000000000000000000000000";
             txtTutarYatan.Name = "txtTutarYatan";
-            txtTutarYatan.Size = new Size(64, 30);
+            txtTutarYatan.Size = new Size(174, 36);
             txtTutarYatan.TabIndex = 6;
             txtTutarYatan.ValidatingType = typeof(int);
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe Print", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(196, 145);
-            label2.Margin = new Padding(6, 0, 6, 0);
+            label2.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(179, 266);
+            label2.Margin = new Padding(7, 0, 7, 0);
             label2.Name = "label2";
-            label2.Size = new Size(303, 23);
+            label2.Size = new Size(489, 31);
             label2.TabIndex = 5;
             label2.Text = "Hesabınıza Yatırmak İstediğiniz Tutar (TL) :";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe Print", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(196, 70);
-            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Location = new Point(460, 42);
+            label1.Margin = new Padding(7, 0, 7, 0);
             label1.Name = "label1";
-            label1.Size = new Size(408, 37);
+            label1.Size = new Size(505, 47);
             label1.TabIndex = 4;
-            label1.Text = "Para Yatırma Ekranına Hoşgeldiniz ..";
+            label1.Text = "Para Yatırma Ekranına Hoşgeldiniz";
             // 
             // ParaYatir
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1082, 703);
             Controls.Add(button1);
             Controls.Add(txtTutarYatan);
             Controls.Add(label2);
             Controls.Add(label1);
+            DoubleBuffered = true;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ParaYatir";
             Text = "ParaYatir";
             ResumeLayout(false);

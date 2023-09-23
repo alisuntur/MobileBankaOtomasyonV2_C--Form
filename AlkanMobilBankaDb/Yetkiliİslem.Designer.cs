@@ -28,51 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Yetkiliİslem));
             label1 = new Label();
             groupBox1 = new GroupBox();
+            btnPasiflestir = new Button();
+            btnaktiflestir = new Button();
             btnOturumKapat = new Button();
             btnListele = new Button();
-            btnSil = new Button();
             btnGuncelle = new Button();
             btnArama = new Button();
             btnEkle = new Button();
-            button1 = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(208, 25);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe Print", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(497, 43);
             label1.Name = "label1";
-            label1.Size = new Size(292, 25);
+            label1.Size = new Size(472, 50);
             label1.TabIndex = 0;
             label1.Text = "Sayın Yetkili Admin Hoşgeldiniz";
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.Bisque;
-            groupBox1.Controls.Add(button1);
+            groupBox1.BackColor = Color.Silver;
+            groupBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            groupBox1.Controls.Add(btnPasiflestir);
+            groupBox1.Controls.Add(btnaktiflestir);
             groupBox1.Controls.Add(btnOturumKapat);
             groupBox1.Controls.Add(btnListele);
-            groupBox1.Controls.Add(btnSil);
             groupBox1.Controls.Add(btnGuncelle);
             groupBox1.Controls.Add(btnArama);
             groupBox1.Controls.Add(btnEkle);
-            groupBox1.Location = new Point(150, 90);
+            groupBox1.Location = new Point(485, 177);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(410, 334);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(550, 469);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // btnPasiflestir
+            // 
+            btnPasiflestir.BackColor = Color.ForestGreen;
+            btnPasiflestir.Font = new Font("Segoe UI Historic", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPasiflestir.ForeColor = SystemColors.Control;
+            btnPasiflestir.Image = (Image)resources.GetObject("btnPasiflestir.Image");
+            btnPasiflestir.ImageAlign = ContentAlignment.BottomCenter;
+            btnPasiflestir.Location = new Point(299, 299);
+            btnPasiflestir.Margin = new Padding(3, 4, 3, 4);
+            btnPasiflestir.Name = "btnPasiflestir";
+            btnPasiflestir.Size = new Size(230, 77);
+            btnPasiflestir.TabIndex = 7;
+            btnPasiflestir.Text = "Müşteri Pasifleştirme";
+            btnPasiflestir.UseVisualStyleBackColor = false;
+            btnPasiflestir.Click += btnPasiflestir_Click;
+            // 
+            // btnaktiflestir
+            // 
+            btnaktiflestir.BackColor = Color.ForestGreen;
+            btnaktiflestir.Font = new Font("Segoe UI Historic", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
+            btnaktiflestir.ForeColor = SystemColors.Control;
+            btnaktiflestir.Image = (Image)resources.GetObject("btnaktiflestir.Image");
+            btnaktiflestir.ImageAlign = ContentAlignment.BottomCenter;
+            btnaktiflestir.Location = new Point(299, 177);
+            btnaktiflestir.Margin = new Padding(3, 4, 3, 4);
+            btnaktiflestir.Name = "btnaktiflestir";
+            btnaktiflestir.Size = new Size(230, 77);
+            btnaktiflestir.TabIndex = 6;
+            btnaktiflestir.Text = "Müşteri Aktifleştirme";
+            btnaktiflestir.UseVisualStyleBackColor = false;
+            btnaktiflestir.Click += button1_Click;
             // 
             // btnOturumKapat
             // 
-            btnOturumKapat.BackColor = Color.Red;
-            btnOturumKapat.ForeColor = SystemColors.ControlText;
-            btnOturumKapat.Location = new Point(135, 250);
+            btnOturumKapat.BackColor = Color.Gray;
+            btnOturumKapat.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnOturumKapat.ForeColor = SystemColors.Control;
+            btnOturumKapat.Location = new Point(131, 384);
+            btnOturumKapat.Margin = new Padding(3, 4, 3, 4);
             btnOturumKapat.Name = "btnOturumKapat";
-            btnOturumKapat.Size = new Size(140, 40);
+            btnOturumKapat.Size = new Size(287, 69);
             btnOturumKapat.TabIndex = 5;
             btnOturumKapat.Text = "Oturumu Sonlandır";
             btnOturumKapat.UseVisualStyleBackColor = false;
@@ -81,34 +121,30 @@
             // btnListele
             // 
             btnListele.BackColor = SystemColors.ControlDarkDark;
-            btnListele.ForeColor = SystemColors.ControlText;
-            btnListele.Location = new Point(227, 106);
+            btnListele.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnListele.ForeColor = SystemColors.Control;
+            btnListele.Image = (Image)resources.GetObject("btnListele.Image");
+            btnListele.ImageAlign = ContentAlignment.BottomCenter;
+            btnListele.Location = new Point(299, 48);
+            btnListele.Margin = new Padding(3, 4, 3, 4);
             btnListele.Name = "btnListele";
-            btnListele.Size = new Size(140, 40);
+            btnListele.Size = new Size(230, 69);
             btnListele.TabIndex = 4;
             btnListele.Text = "Müşteri Listele";
             btnListele.UseVisualStyleBackColor = false;
             btnListele.Click += btnListele_Click;
             // 
-            // btnSil
-            // 
-            btnSil.BackColor = Color.Salmon;
-            btnSil.ForeColor = SystemColors.ControlText;
-            btnSil.Location = new Point(227, 31);
-            btnSil.Name = "btnSil";
-            btnSil.Size = new Size(140, 40);
-            btnSil.TabIndex = 3;
-            btnSil.Text = "Müşteri Sil";
-            btnSil.UseVisualStyleBackColor = false;
-            btnSil.Click += btnSil_Click;
-            // 
             // btnGuncelle
             // 
             btnGuncelle.BackColor = Color.SaddleBrown;
-            btnGuncelle.ForeColor = SystemColors.ControlText;
-            btnGuncelle.Location = new Point(43, 181);
+            btnGuncelle.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnGuncelle.ForeColor = SystemColors.Control;
+            btnGuncelle.Image = (Image)resources.GetObject("btnGuncelle.Image");
+            btnGuncelle.ImageAlign = ContentAlignment.BottomCenter;
+            btnGuncelle.Location = new Point(35, 307);
+            btnGuncelle.Margin = new Padding(3, 4, 3, 4);
             btnGuncelle.Name = "btnGuncelle";
-            btnGuncelle.Size = new Size(140, 40);
+            btnGuncelle.Size = new Size(230, 69);
             btnGuncelle.TabIndex = 2;
             btnGuncelle.Text = "Müşteri Güncelle";
             btnGuncelle.UseVisualStyleBackColor = false;
@@ -117,10 +153,14 @@
             // btnArama
             // 
             btnArama.BackColor = Color.Yellow;
-            btnArama.ForeColor = SystemColors.ControlText;
-            btnArama.Location = new Point(43, 106);
+            btnArama.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnArama.ForeColor = SystemColors.Control;
+            btnArama.Image = (Image)resources.GetObject("btnArama.Image");
+            btnArama.ImageAlign = ContentAlignment.BottomCenter;
+            btnArama.Location = new Point(35, 177);
+            btnArama.Margin = new Padding(3, 4, 3, 4);
             btnArama.Name = "btnArama";
-            btnArama.Size = new Size(140, 40);
+            btnArama.Size = new Size(230, 69);
             btnArama.TabIndex = 1;
             btnArama.Text = "Müşteri Ara";
             btnArama.UseVisualStyleBackColor = false;
@@ -129,38 +169,35 @@
             // btnEkle
             // 
             btnEkle.BackColor = Color.YellowGreen;
-            btnEkle.ForeColor = SystemColors.ControlText;
-            btnEkle.Location = new Point(43, 31);
+            btnEkle.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEkle.ForeColor = SystemColors.Control;
+            btnEkle.Image = (Image)resources.GetObject("btnEkle.Image");
+            btnEkle.ImageAlign = ContentAlignment.BottomCenter;
+            btnEkle.Location = new Point(35, 48);
+            btnEkle.Margin = new Padding(3, 4, 3, 4);
             btnEkle.Name = "btnEkle";
-            btnEkle.Size = new Size(140, 40);
+            btnEkle.Size = new Size(230, 69);
             btnEkle.TabIndex = 0;
             btnEkle.Text = "Müşteri Ekleme";
             btnEkle.UseVisualStyleBackColor = false;
             btnEkle.Click += btnEkle_Click;
             // 
-            // button1
-            // 
-            button1.BackColor = Color.ForestGreen;
-            button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(227, 181);
-            button1.Name = "button1";
-            button1.Size = new Size(140, 40);
-            button1.TabIndex = 6;
-            button1.Text = "Müşteri Aktifleştirme";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
             // Yetkiliİslem
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(673, 596);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1082, 703);
             Controls.Add(groupBox1);
             Controls.Add(label1);
+            DoubleBuffered = true;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Yetkiliİslem";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Yetkili İslemleri";
+            Load += Yetkiliİslem_Load;
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -169,13 +206,13 @@
         #endregion
 
         private Label label1;
-        private GroupBox groupBox1;
         private Button btnOturumKapat;
         private Button btnListele;
-        private Button btnSil;
         private Button btnGuncelle;
         private Button btnArama;
         private Button btnEkle;
-        private Button button1;
+        private Button btnaktiflestir;
+        protected GroupBox groupBox1;
+        private Button btnPasiflestir;
     }
 }

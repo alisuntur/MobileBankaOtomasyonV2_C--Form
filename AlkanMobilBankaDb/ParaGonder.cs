@@ -6,7 +6,7 @@ namespace AlkanMobilBankaDb
 {
     public partial class ParaGonder : Form
     {
-        private readonly string connectionString = "server=DESKTOP-M2A9413\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True";
+        private readonly string connectionString = "server=EXCALIBUR\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True";
 
         public ParaGonder()
         {
@@ -102,5 +102,10 @@ namespace AlkanMobilBankaDb
                 catch { }
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-}               
+}

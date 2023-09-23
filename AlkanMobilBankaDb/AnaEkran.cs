@@ -5,14 +5,14 @@ namespace AlkanMobilBankaDb;
 public partial class AnaEkran : Form
 {
     //SQL Baðlantýsý Yapýldý
-    SqlConnection con = new SqlConnection("server=DESKTOP-M2A9413\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True");
-    
+    SqlConnection con = new SqlConnection("server=EXCALIBUR\\SQLEXPRESS;initial catalog=BankaOtomasyonDb;integrated security=sspi;TrustServerCertificate=True");
+
     //Sonraki formlarda kullanmak üzere deðiþkenlerimizi public þeklinde sýnýflandýrdýk 
     public static string adSoyad = "";
     public static string kAdi = "";
     public static int musteriId;
-    public static double mBakiye= 0.0f;
-    
+    public static double mBakiye = 0.0f;
+
 
     public AnaEkran()
     {
@@ -30,7 +30,7 @@ public partial class AnaEkran : Form
                 //Yetkili Admin Giriþi ve Yetkili Form Açýlma Ýþlemi
                 YetkiliÝslem yetkiliÝslemler = new YetkiliÝslem();
                 yetkiliÝslemler.Show();
-                
+
             }
             else
             {
@@ -77,9 +77,49 @@ public partial class AnaEkran : Form
                 musteriÝslem mÝslem = new musteriÝslem();
                 mÝslem.Show();
             }
-           //Textboxlarý sýfýrladýk
+            //Textboxlarý sýfýrladýk
             textBox1.Text = "";
             textBox2.Text = "";
         }
+    }
+
+    private void AnaEkran_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void radioButton1_CheckedChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void groupBox1_Enter(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label4_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void label3_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void textBox2_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void radioButton2_CheckedChanged(object sender, EventArgs e)
+    {
+
     }
 }

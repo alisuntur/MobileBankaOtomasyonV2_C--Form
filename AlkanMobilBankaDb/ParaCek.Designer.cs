@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParaCek));
             label1 = new Label();
             label2 = new Label();
             txtTutar = new MaskedTextBox();
@@ -37,43 +38,47 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(85, 71);
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(475, 44);
             label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(392, 37);
+            label1.Size = new Size(483, 47);
             label1.TabIndex = 0;
-            label1.Text = "Para Çekme Ekranına Hoşgeldiniz ..";
+            label1.Text = "Para Çekme Ekranına Hoşgeldiniz";
             label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe Print", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(85, 146);
+            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(260, 260);
             label2.Margin = new Padding(6, 0, 6, 0);
             label2.Name = "label2";
-            label2.Size = new Size(310, 23);
+            label2.Size = new Size(321, 76);
             label2.TabIndex = 1;
-            label2.Text = "Hesabınızdan Çekmek İstediğiniz Tutar (TL) :";
+            label2.Text = "Hesabınızdan Çekmek \r\nİstediğiniz Tutar (TL) :";
             label2.Click += label2_Click;
             // 
             // txtTutar
             // 
             txtTutar.Font = new Font("Segoe Print", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            txtTutar.Location = new Point(404, 143);
-            txtTutar.Mask = "0000000000";
+            txtTutar.Location = new Point(301, 360);
+            txtTutar.Mask = "00000000000000000000000000000000";
             txtTutar.Name = "txtTutar";
-            txtTutar.Size = new Size(64, 30);
+            txtTutar.Size = new Size(233, 36);
             txtTutar.TabIndex = 2;
             txtTutar.ValidatingType = typeof(int);
             txtTutar.MaskInputRejected += txtTutar_MaskInputRejected;
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe Print", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            button1.Location = new Point(290, 202);
+            button1.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button1.ForeColor = Color.Black;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.BottomLeft;
+            button1.Location = new Point(338, 430);
             button1.Name = "button1";
-            button1.Size = new Size(105, 34);
+            button1.Size = new Size(154, 46);
             button1.TabIndex = 3;
             button1.Text = "Para Çek";
             button1.UseVisualStyleBackColor = true;
@@ -81,13 +86,16 @@
             // 
             // ParaCek
             // 
-            AutoScaleDimensions = new SizeF(13F, 37F);
+            AutoScaleDimensions = new SizeF(17F, 46F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(572, 456);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1082, 703);
             Controls.Add(button1);
             Controls.Add(txtTutar);
             Controls.Add(label2);
             Controls.Add(label1);
+            DoubleBuffered = true;
             Font = new Font("Segoe Print", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             Margin = new Padding(6, 7, 6, 7);
             Name = "ParaCek";

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ali\\source\\repos\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\AlkanMobilBankaDb.csproj": {}
+    "C:\\Users\\Ali\\Downloads\\AlkanBank-20230604T120532Z-001\\AlkanBank\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\AlkanMobilBankaDb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ali\\source\\repos\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\AlkanMobilBankaDb.csproj": {
+    "C:\\Users\\Ali\\Downloads\\AlkanBank-20230604T120532Z-001\\AlkanBank\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\AlkanMobilBankaDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ali\\source\\repos\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\AlkanMobilBankaDb.csproj",
+        "projectUniqueName": "C:\\Users\\Ali\\Downloads\\AlkanBank-20230604T120532Z-001\\AlkanBank\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\AlkanMobilBankaDb.csproj",
         "projectName": "AlkanMobilBankaDb",
-        "projectPath": "C:\\Users\\Ali\\source\\repos\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\AlkanMobilBankaDb.csproj",
+        "projectPath": "C:\\Users\\Ali\\Downloads\\AlkanBank-20230604T120532Z-001\\AlkanBank\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\AlkanMobilBankaDb.csproj",
         "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ali\\source\\repos\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\obj\\",
+        "outputPath": "C:\\Users\\Ali\\Downloads\\AlkanBank-20230604T120532Z-001\\AlkanBank\\AlkanMobilBankaDb\\AlkanMobilBankaDb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
